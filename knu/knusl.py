@@ -19,7 +19,7 @@ import json
 class KnuSL():
 
 	def __init__(self):
-		with open('data/SentiWord_info.json', encoding='utf-8-sig', mode='r') as f:
+		with open('knu/data/SentiWord_info.json', encoding='utf-8-sig', mode='r') as f:
 			self.data = json.load(f)
 
 
@@ -34,11 +34,6 @@ class KnuSL():
 		
 		r_word = result[0]
 		s_word = result[1]
-							
-		print('어근 : ' + r_word)
-		print('극성 : ' + s_word)		
-		
-		
 		return r_word, s_word
 
 if __name__ == "__main__":
